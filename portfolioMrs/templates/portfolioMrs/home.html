@@ -1,11 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr.S | Home page</title>
-</head>
-<body>
-   
-</body>
-</html>
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Mr.S | Home page {% endblock title %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/portfolioMrs/style.css' %}">
+{% endblock styles %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Ducimus rerum laborum deleniti, repellat alias quod vitae officiis. 
+            Cumque ea atque sequi placeat eius! Amet reiciendis tempora quibusdam incidunt est dicta!
+            <p class="test">test un deux un deux</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
