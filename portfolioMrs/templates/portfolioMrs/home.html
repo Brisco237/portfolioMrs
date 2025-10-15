@@ -2,17 +2,41 @@
 {% load static %}
 {% block title %} Mr.S | Home page {% endblock title %}
 {% block styles %}
-    <link rel="stylesheet" href="{% static 'css/portfolioMrs/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/portfolioMrs/home.css' %}">
 {% endblock styles %}
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row">
-        {% include "navbar.html" %}
+    <div class="row" id="home-section">
+        <div class="row">
+            <div class="col-lg-12">
+                {% include "navbar.html" %}
+            </div>
+        </div>
+        <div class="col-lg-12 text-center" id="home-text">
+            <h1> Unique Art for</h1>
+            <h2>Unique Homes</h2>
+            <br><br>
+            <a href="" class="shop-button">Shop</a>
+        </div>
     </div>
-    <div class="row">
-        <div class="col-lg-12">
-            
+    <div class="container-fluid" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center" id="about-image">
+                    <img src="{% static 'images/fond1.jpg' %}" class="img-fluid">
+                </div>
+                <div class="col-lg-6" id="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Mr.S, a passionate artist dedicated to creating unique and captivating art pieces that
+                        transform homes into personalized sanctuaries. With a keen eye for detail and a love for vibrant colors,
+                        I strive to bring joy and inspiration through my artwork. Each piece is crafted with care and
+                        creativity, reflecting my commitment to quality and originality. Whether you're looking for a statement
+                        piece or a subtle accent, my art is designed to enhance your living space and express your
+                        individuality. Thank you for visiting my portfolio, and I look forward to sharing my artistic journey
+                        with you!</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
