@@ -4,9 +4,9 @@
 
 {% block content %}
 <div class="col-lg-12 mt-4">
-    <nav>
+    <nav x-data="{ open: false }">
         <ul>
-            <li><a href="{% url 'home' %}"><h4>Mr.S - FINE ART</h4></a></li>
+            <li><a href="{% url 'home' %}"><h4>[ Mr.S - FINE ART ]</h4></a></li>
             <li class="items"><a href="{% url 'home' %}">Home</a></li>
             <li class="items"><a href="">Original Art</a></li>
             <li class="items"><a href="">About</a></li>
@@ -17,12 +17,13 @@
                 <a href=""><i class="fab fa-telegram"></i></a>
             </li>
             <li class="items"><a href="" class="shop-button">Shop</a></li>
-            <li class="burger-menu"><i class=""><i class="fa-solid fa-bars"></i></i></li>
+            <li class="burger-menu-croix" @click="open=false" x-show="open=true"><i class="fa-solid fa-xmark"></i></li>
+            <li class="burger-menu-bars" @click="open=true"><i class="fa-solid fa-bars"></i></li>
         </ul>
     </nav>
     <!--second navbar-->
-    <nav class="second-nav">
-        <ul>
+    <nav class="second-nav" x-data="{ open:false }">
+        <ul x-show="open=true">
             <li class="item"><a href="{% url 'home' %}">Home</a></li>
             <li class="item"><a href="">Original Art</a></li>
             <li class="item"><a href="">About</a></li>

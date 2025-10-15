@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center" id="about-image">
-                    <img src="{% static 'images/fond2.jpg' %}" height="800px" width="100%">
+                    <img src="{% static 'images/fond3.jpg' %}" width="100%">
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5" id="about-text">
@@ -46,7 +46,7 @@
                     piece or a subtle accent, my art is designed to enhance your living space and express your
                     individuality. Thank you for visiting my portfolio, and I look forward to sharing my artistic journey.
                     </p><br>
-                    <a href="" class="btn-about">Meet Mr.S</a>
+                    <a href="" class="btn-about">Contactez Mr.S</a>
                     <br><br><br>
                 </div>
             </div>
@@ -64,16 +64,37 @@
                 <a href="">Explore Art Works</a>
             </div>
         </div>
-        <div class="row text-center" id="title-artwork">
-            <div class="col-lg-12 mb-5">
+    </div>
+    <div class="row text-center" id="title-artwork">
+            <div class="col-lg-12 mb-4">
                 <h1>Explore Art</h1>
             </div>
         </div>
+    </div>
+    <div class="container" id="masonry">
         <div class="row mt-4">
-            <div>
-                
+            <div class="col-lg-12">
+                <div class="grid">
+                    {% for photo in photos %}
+                        <div class="grid-item">
+                            <img src="{{ photo.image.url }}" alt="{{ photo.titre }}" class="img-fluid rounded shadow-sm">
+                        </div>
+                    {% empty %}
+                        <p>Aucune photo disponible pour le moment.</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="row text-center mb-5">
+            <div class="col-lg-12">
+                <a href="" class="buy-button">Buy Original Art</a>
             </div>
         </div>
     </div>
+
 </div>
 {% endblock content %}
+
+{% block js %}
+    <script src="{% static 'js/portfolioMrs/home.js' %}" defer></script>
+{% endblock js %}
