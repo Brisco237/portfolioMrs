@@ -1,9 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %} Mr.S | Home page {% endblock title %}
-{% block styles %}
-    <link rel="stylesheet" href="{% static 'css/portfolioMrs/home.css' %}">
-{% endblock styles %}
+{% block styles %}<link rel="stylesheet" href="{% static 'css/portfolioMrs/home.css' %}">{% endblock styles %}
 
 {% block content %}
 <div class="container-fluid">
@@ -19,11 +17,11 @@
     <div class="container-fluid mb-5" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 text-center" id="about-image">
+                <div class="col-lg-5 col-md-6 text-center" id="about-image">
                     <img src="{% static 'images/fond3.jpg' %}" width="100%">
                 </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6" id="about-text">
+                <div class="col-lg-1 col-md-1"></div>
+                <div class="col-lg-6 col-md-5" id="about-text">
                     <h2>About Me</h2><br>
                     <p>Hello! I'm Mr.S, a passionate artist dedicated to creating unique and captivating art pieces that
                     transform homes into personalized sanctuaries. With a keen eye for detail and a love for vibrant colors,
@@ -56,13 +54,13 @@
                     repellendus eum odit sit adipisci, magnam fugiat labore vero vel laborum.
                 </p>
                 <br><br>
-                <a href="">Explore Art Works</a>
+                <a href="">Explore Mon Travail</a>
             </div>
         </div>
     </div>
     <div class="row text-center" id="title-artwork">
             <div class="col-lg-12 mb-4">
-                <p>Explore Art</p>
+                <p>_Mes Meilleurs Realisations_</p>
             </div>
         </div>
     </div>
@@ -82,7 +80,7 @@
         </div>
         <div class="row text-center mb-5 mt-4">
             <div class="col-lg-12">
-                <a href="" class="buy-button">Buy Original Art</a>
+                <a href="" class="buy-button">Achetez un dessin ?</a>
             </div>
         </div>
     </div>
@@ -93,7 +91,7 @@
                 <div class="col-lg-6" id="commissions-img">
                     <h1>Commissions</h1>
                     <br>
-                    <img src="{% static 'images/portrait1.jfif' %}" width="100%">
+                    <img src="{% static 'images/fond5.jpg' %}" width="100%">
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5" id="commissions-text">
@@ -168,8 +166,8 @@
         </div>
     </div>
 </div>
-{% endblock content %}
 
 {% block js %}
     <script src="{% static 'js/portfolioMrs/home.js' %}" defer></script>
 {% endblock js %}
+{% endblock content %}
