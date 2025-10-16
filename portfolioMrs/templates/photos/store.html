@@ -14,7 +14,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-lg-12">
-                <p>19 Produits</p>
+                <p>{{ total }} Produits</p>
             </div>
         </div>
         <div class="row mt-4">
@@ -24,7 +24,7 @@
                         <div class="grid-item">
                             <img src="{{ photo.image.url }}" alt="{{ photo.titre }}">
                             <br>
-                            <p>$ {{ photo.price }}</p>
+                            <p>Fcfa <strong>{{ photo.price }}</strong></p>
                         </div>
                     {% empty %}
                         <p>Aucune photo disponible pour le moment.</p>

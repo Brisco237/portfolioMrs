@@ -9,7 +9,7 @@
             <li><a href="{% url 'home' %}"><h4><strong>Mr.S - FINE ART</strong></h4></a></li>
             <li class="items"><a href="{% url 'home' %}">Home</a></li>
             <li class="items"><a href="{% url 'store' %}">Original Art</a></li>
-            <li class="items"><a href="">About</a></li>
+            <li class="items"><a href="{% url 'about' %}">About</a></li>
             <li class="items"><a href="">Contact</a></li>
             <li class="items"><i class="fa-solid fa-search" style="cursor:pointer;font-size:22px;"></i></li>
             <li class="items"><a href="" class="shop-button">Shop</a></li>
@@ -22,7 +22,7 @@
     <div class="mobile-menu" x-show="open" x-transition.duration.700ms  x-cloak>
         <a href="{% url 'home' %}">Home</a>
         <a href="{% url 'store' %}">Original Art</a>
-        <a href="">About</a>
+        <a href="{% url 'about' %}">About</a>
         <a href="">Contact</a>
         <br>
         <p>
