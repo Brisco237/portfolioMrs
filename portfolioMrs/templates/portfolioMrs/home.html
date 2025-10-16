@@ -19,11 +19,11 @@
     <div class="container-fluid mb-5" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-center" id="about-image">
+                <div class="col-lg-5 text-center" id="about-image">
                     <img src="{% static 'images/fond3.jpg' %}" width="100%">
                 </div>
                 <div class="col-lg-1"></div>
-                <div class="col-lg-5" id="about-text">
+                <div class="col-lg-6" id="about-text">
                     <h2>About Me</h2><br>
                     <p>Hello! I'm Mr.S, a passionate artist dedicated to creating unique and captivating art pieces that
                     transform homes into personalized sanctuaries. With a keen eye for detail and a love for vibrant colors,
@@ -39,13 +39,9 @@
                     piece or a subtle accent, my art is designed to enhance your living space and express your
                     individuality. Thank you for visiting my portfolio, and I look forward to sharing my artistic journey
                     with you! <br><br>
-                    Hello! I'm Mr.S, a passionate artist dedicated to creating unique and captivating art pieces that
-                    transform homes into personalized sanctuaries. With a keen eye for detail and a love for vibrant colors,
-                    I strive to bring joy and inspiration through my artwork. Each piece is crafted with care and
-                    creativity, reflecting my commitment to quality and originality. Whether you're looking for a statement
                     piece or a subtle accent, my art is designed to enhance your living space and express your
                     individuality. Thank you for visiting my portfolio, and I look forward to sharing my artistic journey.
-                    </p><br>
+                    </p><br><br>
                     <a href="" class="btn-about">Contactez Mr.S</a>
                     <br><br><br>
                 </div>
@@ -54,12 +50,11 @@
     </div>
     <div class="container" id="artwork">
         <div class="row text-center">
-            <div class="col-lg-8 offset-lg-2">
-                <h4>
-                    Lorem ipsum dolor....sit amet consectetur adipisicing elit. Ipsa at officiis 
-                    repellendus eum odit sit adipisci, magnam fugiat labore vero vel laborum odio, 
-                    consequatur doloribus obcaecati explicabo. Iure, minima nesciunt.
-                </h4>
+            <div class="col-lg-10 offset-lg-1">
+                <p class="text-artwork">
+                    Lorem ipsum dolor.... sit amet consectetur adipisicing elit. Ipsa at officiis 
+                    repellendus eum odit sit adipisci, magnam fugiat labore vero vel laborum.
+                </p>
                 <br><br>
                 <a href="">Explore Art Works</a>
             </div>
@@ -67,17 +62,17 @@
     </div>
     <div class="row text-center" id="title-artwork">
             <div class="col-lg-12 mb-4">
-                <h1>Explore Art</h1>
+                <p>Explore Art</p>
             </div>
         </div>
     </div>
-    <div class="container" id="masonry">
+    <div class="container-fluid" id="masonry">
         <div class="row mt-4">
             <div class="col-lg-12">
                 <div class="grid">
                     {% for photo in photos %}
                         <div class="grid-item">
-                            <img src="{{ photo.image.url }}" alt="{{ photo.titre }}" class="img-fluid rounded shadow-sm">
+                            <img src="{{ photo.image.url }}" alt="{{ photo.titre }}">
                         </div>
                     {% empty %}
                         <p>Aucune photo disponible pour le moment.</p>
@@ -85,13 +80,93 @@
                 </div>
             </div>
         </div>
-        <div class="row text-center mb-5">
+        <div class="row text-center mb-5 mt-4">
             <div class="col-lg-12">
                 <a href="" class="buy-button">Buy Original Art</a>
             </div>
         </div>
     </div>
-
+    <br><br> <br>
+    <div class="container-fluid mb-5" id="commissions">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" id="commissions-img">
+                    <h1>Commissions</h1>
+                    <br>
+                    <img src="{% static 'images/portrait1.jfif' %}" width="100%">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5" id="commissions-text">
+                    <h4>Turn yourself into ART</h4>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum animi velit et
+                        laudantium iste quisquam recusandae corporis ullam quidem delectus atque omnis
+                        doloribus quas vero, eum ducimus unde ipsa aut!
+                    </p>
+                    <br>
+                    <a href="" class="btn-contact">Contact</a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5" id="commissions-text">
+                    <h4>Customize your abstract</h4>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum animi velit et
+                        laudantium iste quisquam recusandae corporis ullam quidem delectus atque omnis
+                        doloribus quas vero, eum ducimus unde ipsa aut!
+                    </p>
+                    <br>
+                    <a href="" class="btn-contact">Contact</a>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6" id="commissions-img">
+                    <br>
+                    <img src="{% static 'images/dessin2.jfif' %}" width="100%">
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Follow me on Instagram</h2>
+                <i class="fab fa-instagram"></i> SirkoulouSylvestre.art
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-4 mb-5">
+        <div class="row">
+            <div class="col-lg-12" id="photos-footer">
+                <img src="{% static 'images/fond3.jpg' %}">
+                <img src="{% static 'images/fond2.jpg' %}">
+                <img src="{% static 'images/fond1.jpg' %}">
+                <img src="{% static 'images/fond4.jpg' %}">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center" id="footer">
+            <div class="col-lg-4">
+                <div class="footer1">
+                    <p>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-square-facebook"></i></a>
+                        <a href=""><i class="fab fa-telegram"></i></a>
+                        <a href="" class="name">Mr.S - Original Fine Art</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5"></div>
+            <div class="col-lg-3">
+                <div class="footer2 mb-3">
+                    Made by <a href="">Kamdem Brice</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock content %}
 
