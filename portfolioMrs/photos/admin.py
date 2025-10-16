@@ -3,3 +3,6 @@ from .models import Photos
 
 # Register your models here.
 admin.site.register(Photos)
+
+admin.site.site_title = "Espace Administrateur"
+admin.site.site_header = "Bienvenue Mr.S"
