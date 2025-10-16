@@ -13,7 +13,26 @@
     <title>{% block title %} {% endblock %}</title>
     {% block styles %} {% endblock styles %}
 </head>
-<style>body{font-family: 'Montserrat';}</style>
+<style>
+    body{font-family: 'Montserrat';}
+    .grid {
+        margin: 0 auto;
+    }
+    .grid-item {
+        width: 300px;
+        margin-bottom: 16px;
+    }
+    .grid-item img {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .grid-item img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+</style>
 <body>
 {% block content %}{% endblock content %}
 <script src="{% static 'js/base.js' %}" defer></script>

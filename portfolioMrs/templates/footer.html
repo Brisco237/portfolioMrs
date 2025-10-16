@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+    /* Footer */
+#footer .footer1 a{
+    text-decoration: none;
+    color: gray;
+}
+#footer .footer1 p a i{
+    font-size:22px;
+}
+.footer1 p a{
+    padding:5px;
+}
+.footer2 a{
+    color: gray;
+}
+#photos-footer{
+    display: flex;
+}
+#photos-footer img{
+    width: 350px;
+    height: 250px;
+}
+</style>
+<div class="container">
+        <div class="row text-center" id="footer">
+            <div class="col-lg-4">
+                <div class="footer1">
+                    <p>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-square-facebook"></i></a>
+                        <a href=""><i class="fab fa-telegram"></i></a>
+                        <a href="" class="name">Mr.S - Original Fine Art</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5"></div>
+            <div class="col-lg-3">
+                <div class="footer2 mb-3">
+                    Made by <a href="">Kamdem Brice</a>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock content %}
