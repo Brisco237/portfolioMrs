@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Mr.s | Contact page {% endblock title %}
+{% block styles %}<link rel="stylesheet" href="{% static 'css/portfolioMrs/contact.css' %}">{% endblock styles %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row" id="nav">
+        <div class="col-lg-12">
+            {% include "navbar.html" %}
+        </div>
+    </div>
+    <div class="container-fluid mb-5" id="contact-form">
+        <div class="row">
+            <div class="col-lg-5 col-md-6">
+                <img src="{% static 'images/fond4.jpg' %}" width="100%" height="600px">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 col-md-6 mt-4" id="form">
+                <h1>Get in touch</h1>
+                <br>
+                <p>Posé moi toutes vos questions par rapport a mes technique de dessin, le matos et bien d'autres.
+                    <br><br>
+                    Based in Yaoundé, cameroun.
+                </p>
+                <form>
+                    {% csrf_token %}
+                    <label for="name">Name*</label>
+                    <div class="name" style="width: 100%;">
+                        <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                        <input type="text" name="last-name" id="last-name" placeholder="Last Name"  required>
+                    </div>
+                    <label for="email">Email*</label><br>
+                    <input type="text" name="email" id="email" width="100%" required><br>
+                    <label for="phone-number">Phone Number</label><br>
+                    <input type="number" name="phone-number" id="phone-number" width="100%" required><br>
+                    <label for="message">Message*</label><br>
+                    <textarea name="message" id="message" cols="50" rows="5" required></textarea>
+                    <br>
+                    <button class="btn-contact">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

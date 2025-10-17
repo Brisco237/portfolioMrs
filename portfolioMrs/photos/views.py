@@ -8,4 +8,7 @@ def store(request):
     return render(request, 'photos/store.html', {'photos' : photos, 'total' : total})
 
 def about(request):
-    return render(request, 'photos/about.html')
+    return render(request, 'portfolioMrs/about.html')
+
+def contact(request):
+    return render(request, 'portfolioMrs/contact.html')
