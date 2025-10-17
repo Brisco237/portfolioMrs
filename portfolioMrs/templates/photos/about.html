@@ -5,11 +5,61 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-12" style="color:black;">
+    <div class="row" id="about-home-section">
+        <div class="col-lg-12">
             {% include "navbar.html" %}
         </div>
     </div>
+    <div class="container mt-5" id="about-page">
+        <div class="row text-center">
+            <div class="col-lg-8 offset-lg-2">
+                <h2>The ARTist</h2>
+                <br>
+                <img src="{% static 'images/fond2.jpg' %}" width="100%" height="800px">
+                <p class="text-about mt-5 ">
+                    Rafael Paiva has been a Professional Photographer and Photo Retoucher since 2010. <br><br>
+                    His rich portfolio is marked by collaborations with a wide spectrum of clients,
+                    ranging from major corporations to independent artists. His specialties are Commercial
+                    Photography and Personal Branding content. <br><br>
+                    With a career steeped in both creativity and technical expertise, Rafael has emerged as
+                    a well-round professional known for his ability to navigate the unique demands of a diverse
+                    high-end clientele. <br><br>
+                    Rafael's corporate experience is strong and on-going. He worked as Senior Retoucher for
+                    Nike/Converse from 2018/2024, where his mastery of detail and innovative vision significantly
+                    contributed to the brand's visual. <br><br>
+                    He currently works at Apple TV as Senior Retoucher for Sports and TV. <br><br>
+                    Rafael started to expand beyond photography in 2024. His explorations around Filmmaking
+                    reflects his passion for pushing the boundaries of visual storytelling. <br><br>
+                    Rafael's journey underscores not only his adaptability but also his pivotal role in shaping
+                    and enhancing the visual identities of the clients he works. <br><br><br>
+                </p>
+                <a href="" class="btn-about mb-5">Get in touch</a>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center" id="citation-about">
+        <div class="col-lg-8 offset-lg-2">
+            <h5>"La peinture est une poésie muette, et la poésie est une peinture aveugle.
+            L’une parle par les formes, l’autre se dessine dans les mots.
+            Mais toutes deux cherchent la même chose : donner une âme à ce que la nature a laissé inachevé."</h5>
+            <br><p>- Léonard de Vinci</p>
+        </div>
+    </div>
+    <div class="row text-center mt-2">
+        <h4>Follow me on Instagram</h4>
+        <p><i class="fab fa-instagram"></i> SirkoulouSylvestre.art</p>
+    </div>
+    <div class="row mb-5 mt-4">
+        <div class="col-lg-12">
+            <div class="col-lg-12" id="photos-footer">
+                <img src="{% static 'images/fond3.jpg' %}" class="img-fluid" alt="fond3">
+                <img src="{% static 'images/fond2.jpg' %}" class="img-fluid" alt="fond2">
+                <img src="{% static 'images/fond1.jpg' %}" class="img-fluid" alt="fond1">
+                <img src="{% static 'images/fond4.jpg' %}" class="img-fluid" alt="fond4">
+            </div>
+        </div>
+    </div>
+    {% include "footer.html" %}
 </div>
 
 {% endblock content %}
