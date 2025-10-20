@@ -11,14 +11,14 @@
             <h1>Inspiration - Passion</h1>
             <h2>Expression</h2>
             <br><br>
-            <a href="" class="shop-button">Shop</a>
+            <a href="{% url 'store' %}" class="shop-button">Shop</a>
         </div>
     </div>
     <div class="container-fluid mb-5" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-6 text-center" id="about-image">
-                    <img src="{% static 'images/fond2.jpg' %}" width="100%">
+                    <img src="{% static 'images/logo.jpg' %}" width="100%">
                 </div>
                 <div class="col-lg-1 col-md-1"></div>
                 <div class="col-lg-6 col-md-5" id="about-text">
@@ -38,7 +38,7 @@
                         <br><br>Bienvenue dans l’imaginaire d’un dessinateur qui dessine avec
                          le cœur autant qu’avec la main.
                     </p><br><br>
-                    <a href="" class="btn-about">Contactez Mr.S</a>
+                    <a href="{% url 'contact' %}" class="btn-about">Contactez Mr.S</a>
                     <br><br><br>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     styles, entre réalisme, manga et illustration numérique.
                 </p>
                 <br><br>
-                <a href="">Explore Mon Travail</a>
+                <a href="#title-artwork">Explore Mon Travail</a>
             </div>
         </div>
     </div>
@@ -68,7 +68,7 @@
                 <div class="grid">
                     {% for photo in photos %}
                         <div class="grid-item">
-                            <img src="{{ photo.image.url }}" alt="{{ photo.titre }}">
+                            <img src="{{ photo.image.url }}" class="img-fluid">
                         </div>
                     {% empty %}
                         <p>Aucune photo disponible pour le moment.</p>
@@ -78,7 +78,7 @@
         </div>
         <div class="row text-center mb-5 mt-4">
             <div class="col-lg-12">
-                <a href="" class="buy-button">Achetez un dessin ?</a>
+                <a href="{% url 'store' %}" class="buy-button">Achetez un dessin ?</a>
             </div>
         </div>
     </div>
@@ -101,7 +101,7 @@
                          passion et un style qui vous ressemble.
                     </p>
                     <br>
-                    <a href="" class="btn-contact">Contact</a>
+                    <a href="{% url 'contact' %}" class="btn-contact">Contact</a>
                 </div>
             </div>
             <div class="row mt-5">
@@ -115,7 +115,7 @@
                        je suis là pour donner vie à vos idées.
                     </p>
                     <br>
-                    <a href="" class="btn-contact">Contact</a>
+                    <a href="{% url 'contact' %}" class="btn-contact">Contact</a>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-6" id="commissions-img">

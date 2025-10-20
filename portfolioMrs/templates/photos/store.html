@@ -17,14 +17,16 @@
                 <p>{{ total }} Produits</p>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-lg-12 col-md-3">
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-4" id="produits">
+            <div class="col-md-12">
                 <div class="grid">
                     {% for photo in photos %}
                         <div class="grid-item">
-                            <img src="{{ photo.image.url }}" alt="{{ photo.titre }}">
+                            <img src="{{ photo.image.url }}" class="img-fluid">
                             <br>
-                            <p>Fcfa <strong>{{ photo.price }}</strong></p>
+                            <p>FCFA <strong style="font-size:20px;">{{ photo.price }}</strong></p>
                         </div>
                     {% empty %}
                         <p>Aucune photo disponible pour le moment.</p>
