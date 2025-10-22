@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import store, about, contact
+from .views import PhotoListView, PhotoDetailView, about, contact
 
 urlpatterns = [
-    path('store/', store, name="store"),
+    path('', PhotoListView.as_view(), name='store'),
+    path('Dessin/<slug:slug>/', PhotoDetailView.as_view(), name='dessin_detail'),
     path('about/', about, name="about"),
     path('contact/', contact, name="contact")
 ]
