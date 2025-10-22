@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Mr.S | Page not found{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {% include "navbar.html" %}
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12 text-center">
+            <h2>Désolé page introuvable 😪😪</h2>
+            <a href="{% url 'home' %}">Retourner a la page d'accueil</a>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            {% include "footer.html" %}
+        </div>
+    </div>
+</div>
+{% endblock content %}
