@@ -1,0 +1,144 @@
+#home-section{
+    height: 100vh;
+    background-image:linear-gradient(rgba(49, 48, 48, 0.5), rgba(49, 48, 48, 0.5)), url("/static/images/fond4.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+}
+#home-section .first-nav button{
+    color:white;
+}
+#home-section .first-nav ul li a{
+    color: white;
+}
+#home-text a{
+    text-decoration: none;
+    background-color:black;
+    padding: 20px 40px 20px 40px;
+    border:none;
+    color: white;
+}
+#home-text h1{
+    letter-spacing: 5px;
+    font-size: 60px;
+}
+#home-text h2{
+    letter-spacing: 5px;
+    font-size: 55px;
+}
+#home-text a:hover{
+    color:white;
+    opacity:0.8;
+}
+/* about section */
+#about{
+    background-color: rgb(248, 234, 242);
+    padding-top: 60px;
+}
+#about-image img{
+    padding-top:100px;
+    height:800px;
+}
+#about-text p{
+    font-size: 22px;
+}
+.btn-about{
+    text-decoration: none;
+    background-color:black;
+    padding: 20px 30px 20px 30px;
+    border:none;
+    color: white;
+}
+.btn-about:hover{
+    color:white;
+    opacity:0.5;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+/* Art work */
+#artwork a{
+    text-decoration: none;
+    background-color:black;
+    padding: 20px 30px 20px 30px;
+    border:none;
+    color: white;
+}
+.text-artwork{
+    font-weight:bold;
+    font-size: 25px;
+    letter-spacing:5px;
+}
+#artwork a:hover{
+    opacity: 0.7;
+}
+#title-artwork{
+    margin-top:180px;
+    font-size: 45px;
+}
+#masonry .buy-button{
+    background-color: black;
+    text-decoration: none;
+    padding: 20px 30px 20px 30px;
+    border:none;
+    color: white;
+}
+#masonry .buy-button:hover{
+    opacity: 0.7;
+}
+/* commisions */
+#commissions{
+    background-color:rgb(248, 234, 242);
+    padding-bottom: 50px;
+}
+#commissions-img{
+    padding-top:25px;
+}
+#commissions-img h1{
+    font-size:3em;
+    font-weight: 300;
+}
+#commissions-text{
+    padding-top:100px;
+}
+#commissions-text h4{
+    font-size:2em;
+    font-weight: 400;
+    color: rgb(139, 137, 137);
+}
+#commissions-text a{
+    text-decoration: none;
+    background-color:black;
+    padding: 20px 30px 20px 30px;
+    border:none;
+    color: white;
+}
+#commissions-text a:hover{
+    opacity:0.5;
+    transition: 0.3s;
+}
+/* Responsive */
+@media screen and (max-width:900px){
+    #home-text h1 {
+        font-size: 45px;
+        letter-spacing:2px;
+    }
+    #home-text h2 {
+        letter-spacing:2px;
+        font-size: 40px;
+    }
+    #about-text p{
+        font-size: 18px;
+    }
+    #about-image img{
+        height: 400px;
+        margin-bottom:40px;
+        padding-top:20px;
+    }
+    #commissions-text{
+        padding-top:29px;
+    }
+    .text-artwork{
+        font-size:18px;
+    }
+}

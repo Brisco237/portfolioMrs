@@ -1,0 +1,46 @@
+#about-home-section a{
+    color:black;
+}
+#about-home-section .shop-button{
+    border: 1px solid black;
+}
+#about-home-section .shop-button:hover{
+    background-color:black;
+    color:white;
+    border: none;
+    transition: 0.5s;
+}
+#about-home-section .mobile-menu .shop-button-mobile{
+    color: white;
+}
+#about-home-section .first-nav ul button i{
+    color: black;
+}
+#about-page a{
+   text-decoration: none;
+}
+#about-page a{
+    background-color: black;
+    color: white;
+    padding: 25px 30px 25px 30px;
+}
+#about-page a:hover{
+    opacity: 0.7;
+}
+#about-page .text-about{
+    font-size: 20px;
+}
+#citation-about{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: rgb(248, 234, 242);
+}
+#citation-about h5{
+    letter-spacing: 3px;
+}
+
+@media  screen and (max-width:800px) {
+    #about-page .text-about{
+        font-size:17px;
+    }
+}

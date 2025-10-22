@@ -1,0 +1,46 @@
+#nav .first-nav ul li a{
+    color: black;
+}
+#nav .first-nav ul .shop-button{
+    border: 1px solid black;
+}
+#nav .first-nav ul .shop-button:hover{
+    color:white;
+    opacity: 0.;
+}
+#nav .first-nav button{
+    color: black;
+}
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 20px 30px 20px 30px;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+#contact-form{
+    margin-top:150px;
+}
+#contact-image img{
+    height:600px;
+}
+form input, textarea{
+    padding: 10px;
+    outline: none;
+}
+form #email, #phone-number,#message{
+    padding-left:10px;
+    outline: none;
+    width: 100%;
+}
+@media screen and (max-width:900px) {
+    #contact-form{
+        margin-top:50px;
+    }   
+    #contact-image img{
+        height:100%;
+    }
+}

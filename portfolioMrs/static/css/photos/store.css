@@ -1,0 +1,36 @@
+#home-section{
+    height:50vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/images/fond2.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+#home-section .first-nav .burger-button{
+    color:white;
+}
+#home-section .first-nav ul li a{
+    color: white;
+}
+#home-section h1{
+    color: white;
+    margin-top: 60px;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+.footer .footer1 p a{
+    text-decoration: none;
+    color: gray;
+    padding: 5px;
+}
+.footer .footer1 p a i{
+    font-size:22px;
+    font-weight:bold;
+}
+.footer .footer2 a{
+    color:gray;
+}
+@media screen and (max-width:375px) {
+    #produits .grid .grid-item img{
+        margin-left:1px;
+    }
+}

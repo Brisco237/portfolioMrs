@@ -1,0 +1,27 @@
+#navbar .first-nav ul li a{
+    color:black;
+}
+#navbar .first-nav ul li a:hover{
+    border-bottom:1px solid black;
+    transition: 0.4s;
+}
+#navbar .first-nav ul .shop-button{
+    border: 1px solid black;
+}
+#navbar .first-nav ul li .shop-button:hover{
+    opacity:0.8;
+    color: white;
+}
+.footer1 p a{
+    color:gray;
+    text-decoration:none;
+    padding:4px;
+}
+.footer1 p a i{
+    font-size:20px;
+    font-weight:bold;
+}
+.footer2 a{
+    color:gray;
+    padding:1px;
+}
